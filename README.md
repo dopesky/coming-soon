@@ -1,6 +1,6 @@
 ## About
 
-This is a repo that is meant to provide a developer with a placeholder website that can be configured into a full coming soon website with a mailing list. The mailing list is for notifying the subscribed users of when the main website goes live. The mail users receive looks like this:
+This is a repo that is meant to provide a developer with a placeholder website that can be configured into a full "*coming soon*" website with a mailing list. The mailing list is for notifying the subscribed users of when the main website goes live. The email users receive looks like this:
 
 <img width="50%" src="https://res.cloudinary.com/dkgtd3pil/image/upload/v1589750683/coming-soon/email.png" alt="Email">
  
@@ -8,20 +8,20 @@ This is a repo that is meant to provide a developer with a placeholder website t
  
 ## How to Use
 
-Clone the repo on any server and run the following command on the commands line at the root of your project:
+Clone the repo on any server and run the following commands on the command line at the root of the project:
 ```$xslt
 $ php -r "file_exists('.env') || copy('.env.example', '.env');"
 $ composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
 $ php artisan key:generate
 ```
-If you do not have shell access to your server, add a valid laravel `APP_KEY` to your Server's Environment Variables. You should change the default `APP_NAME` of the project to be the name of your app/website but this is not necessary.
-That's all you need for the placeholder website.
+If you do not have access to your server, add a valid laravel `APP_KEY` to your Server's Environment Variables. You should change the default `APP_NAME` of the project to be the name of your app/website but this is not necessary.
+That's all you need for a placeholder website.
  
 In order to get the mailing list functionality, you need to have a database for storing the mailing list. You will also need an SMTP mailing server that will be used to send the emails. Store the database and SMTP credentials in the `.env` file and run the following command on the command line:
 ```$xslt
 php artisan migrate
 ```
-That's it.
+That's it. You can do this either locally or on the server so long as you use the server's environment variables when running it locally.
 
 The affected credentials on the `.env` for mailing list functionality are:
 - **DB_HOST** - The database host address
