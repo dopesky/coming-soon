@@ -14,3 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/','contents.welcome');
+Route::prefix('email')->name('email.')->group(function() {
+    Route::view('welcome','emails.welcome')->name('welcome');
+    Route::view('live','emails.live')->name('live');
+});
