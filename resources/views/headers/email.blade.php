@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Reset : BEGIN -->
     <style>
-
         /* What it does: Remove spaces around the email design added by some email clients. */
         /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
         html,
@@ -115,7 +114,6 @@
         }
 
     </style>
-
     <!-- CSS Reset : END -->
 
     <!-- Progressive Enhancements : BEGIN -->
@@ -381,8 +379,6 @@
 
 
     </style>
-
-
 </head>
 
 <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">

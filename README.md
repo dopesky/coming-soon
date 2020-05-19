@@ -14,14 +14,20 @@ $ php -r "file_exists('.env') || copy('.env.example', '.env');"
 $ composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
 $ php artisan key:generate
 ```
-If you do not have access to your server, add a valid laravel `APP_KEY` to your Server's Environment Variables. You should change the default `APP_NAME` of the project to be the name of your app/website but this is not necessary.
+If you do not have access to your server, add a valid laravel `APP_KEY` to your Server's Environment Variables. You should also change the default `APP_NAME` of the project to be the name of your app/website but this is not necessary.
 That's all you need for a placeholder website.
  
 In order to get the mailing list functionality, you need to have a database for storing the mailing list. You will also need an SMTP mailing server that will be used to send the emails. Store the database and SMTP credentials in the `.env` file and run the following command on the command line:
 ```$xslt
 php artisan migrate
 ```
-That's it. You can do this either locally or on the server so long as you use the server's environment variables when running it locally.
+That's it. You can do this either locally or on the server so long as you use the server's database credentials when running it locally.
+
+When you are ready to launch, and you want to notify your subscribed users of the launch, just go to your commandline and type:
+```$xslt
+php artisan app:launch
+```
+This command will initiate the sending of the launch email to all subscribed users.
 
 The affected credentials on the `.env` for mailing list functionality are:
 - **DB_HOST** - The database host address

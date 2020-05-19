@@ -28,7 +28,16 @@
     </style>
 </head>
 <body>
-@yield('content')
+<div class="landing-page bg-purple sidebar-collapse">
+    <div class="page-header header-filter" data-parallax="true"
+         style="background-image: url('https://res.cloudinary.com/dkgtd3pil/image/upload/v1589750691/coming-soon/background.jpg')">
+        <div class="container">
+            <div class="d-flex text-center justify-content-center align-items-center show-on-scroll">
+                @yield('content')
+            </div>
+        </div>
+    </div>
+</div>
 <script src="{{asset('js/jquery.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('js/popper.min.js')}}" type="text/javascript"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
@@ -45,5 +54,32 @@
 <script src="{{asset('js/material-kit.min.js?v=2.0.7')}}" type="text/javascript"></script>
 <script src="https://unpkg.com/@dopesky/infiscroll@1.0.0/dist/js/infiscroll.js"></script>
 @stack('page-script')
+@if (session('info'))
+    <script>
+        setToast({message: '{{session('info')}}', type: 'info'});
+    </script>
+@endif
+@if (session('danger'))
+    <script>
+        setToast({message: '{{session('danger')}}', type: 'danger'});
+    </script>
+@endif
+@if (session('success'))
+    <script>
+        setToast({message: '{{session('success')}}', type: 'success'});
+    </script>
+@endif
+@if (session('warning'))
+    <script>
+        setToast({message: '{{session('warning')}}', type: 'warning'});
+    </script>
+@endif
+@if ($errors->any())
+    <script>
+        for (let item of JSON.parse('@json($errors->all())')) {
+            setToast({message: item, type: 'danger', classes: 'mb-3'});
+        }
+    </script>
+@endif
 </body>
 </html>

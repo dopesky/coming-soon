@@ -11,7 +11,7 @@
                                 <h1 class="logo"><a href="{{url('/')}}">{{env('APP_NAME', 'The App')}}</a></h1>
                                 <h2>{{env('APP_NAME', 'The App')}} is Coming!</h2>
                                 <p>Thank you for Subscribing to our Update List. We shall notify you when we go live.</p>
-                                <p><a href="#" class="btn btn-primary">Unsubscribe</a></p>
+                                <p><a href="{{route('unsubscribe', ['base64_email' => $email])}}" class="btn btn-primary">Unsubscribe</a></p>
                             </div>
                         </td>
                     </tr>

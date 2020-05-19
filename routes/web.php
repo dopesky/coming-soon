@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/','contents.welcome');
-Route::prefix('email')->name('email.')->group(function() {
-    Route::view('welcome','emails.welcome')->name('welcome');
-    Route::view('live','emails.live')->name('live');
-});
+Route::view('/', 'contents.welcome');
+Route::post('/subscribe', 'MailingController@subscribe')->name('subscribe');
+Route::get('/unsubscribe/{base64_email}', 'MailingController@unsubscribe')->name('unsubscribe');
