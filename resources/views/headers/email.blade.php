@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
-      xmlns:o="urn:schemas-microsoft-com:office:office">
-<head>
-    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
-    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
-    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
-    <title>{{env('APP_NAME', 'Laravel')}}</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
-
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700|Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background: #f1f1f1;margin: 0 auto !important;padding: 0 !important;height: 100% !important;width: 100% !important;">
+<head style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <meta charset="utf-8" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">{{env('APP_NAME', 'Laravel')}}</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700|Lato:300,400,700" type="text/css">
     <!-- CSS Reset : BEGIN -->
-    <style>
+    <style style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
         /* What it does: Remove spaces around the email design added by some email clients. */
         /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
         html,
@@ -117,7 +114,7 @@
     <!-- CSS Reset : END -->
 
     <!-- Progressive Enhancements : BEGIN -->
-    <style>
+    <style style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
         /* What it does: Hover styles for buttons */
         .primary {
@@ -315,7 +312,8 @@
         }
 
         .heading-section-white h2 {
-            font-family: line-height: 1;
+            font-family: "Josefin Sans", sans-serif;
+            line-height: 1;
             padding-bottom: 0;
         }
 
@@ -336,7 +334,7 @@
         /*BLOG*/
         .blog-entry {
             border: 1px solid red;
-            padding-bottom: 30px !important !important;
+            padding-bottom: 30px !important;
         }
 
         .text-blog .meta {
@@ -370,47 +368,37 @@
         .footer ul li a {
             color: rgba(255, 255, 255, 1);
         }
-
-
-        @media screen and (max-width: 500px) {
-
-
-        }
-
-
     </style>
 </head>
 
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
-<center style="width: 100%; background-color: #f1f1f1;height: calc(100% - 1.5rem);padding-top: 1.5rem">
-    <div
-        style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+<body width="100%" style="margin: 0 auto !important;padding: 0 !important;mso-line-height-rule: exactly;background-color: #222222;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background: #f1f1f1;font-family: 'Josefin Sans', sans-serif;font-weight: 400;font-size: 15px;line-height: 1.8;color: rgba(0, 0, 0, .4);height: 100% !important;width: 100% !important;">
+<center style="width: 100%;background-color: #f1f1f1;height: calc(100% - 1.5rem);padding-top: 1.5rem;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <div style="display: none;font-size: 1px;max-height: 0px;max-width: 0px;opacity: 0;overflow: hidden;mso-hide: all;font-family: sans-serif;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
         &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
     </div>
-    <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+    <div style="max-width: 600px;margin: 0 auto;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="email-container">
         <!-- BEGIN BODY -->
         @yield('content')
-        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
-               style="margin: auto;">
-            <tr>
-                <td valign="middle" class="bg_black footer email-section">
-                    <table>
-                        <tr>
-                            <td valign="top" width="33.333%">
-                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                    <tr>
-                                        <td style="text-align: left; padding-right: 10px;">
-                                            <p>&copy; {{now()->format('Y')}}. All Rights Reserved</p>
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;">
+            <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                <td valign="middle" class="bg_black footer email-section" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background: #000000;padding: 2.5em;color: rgba(255, 255, 255, .5);mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
+                    <table style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;margin: 0 auto !important;">
+                        <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <td valign="top" width="33.333%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;margin: 0 auto !important;">
+                                    <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <td style="text-align: left;padding-right: 10px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
+                                            <p style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">&copy; {{now()->format('Y')}}. All Rights Reserved</p>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
-                            <td valign="top" width="33.333%">
-                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                    <tr>
-                                        <td style="text-align: right; padding-left: 5px; padding-right: 5px;">
-                                            <p>Made with <i class="fa fa-heart"></i> by <a href="https://kmwenda.com"
-                                                                                           target="_blank">Dopesky.</a>
+                            <td valign="top" width="33.333%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;border-spacing: 0 !important;border-collapse: collapse !important;table-layout: fixed !important;margin: 0 auto !important;">
+                                    <tr style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <td style="text-align: right;padding-left: 5px;padding-right: 5px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt !important;mso-table-rspace: 0pt !important;">
+                                            <p style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Made with
+                                                <i style="background: url('https://res.cloudinary.com/dkgtd3pil/image/upload/v1589880851/coming-soon/heart-solid.png');height: 100px;width: 100px;background-position: center;background-repeat: no-repeat;background-size: contain"> &nbsp;&nbsp;&nbsp;&nbsp;</i> by <a href="https://kmwenda.com" target="_blank" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;text-decoration: none;color: #448ef6;">Dopesky.</a>
                                             </p>
                                         </td>
                                     </tr>
