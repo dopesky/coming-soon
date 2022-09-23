@@ -39,6 +39,7 @@ class SendEmails extends Command {
     public function handle() {
         $users = (new User)->where('suspended', false)->get();
         echo "Sending Launch Email to Subscribed Users . . .\n";
-        return Mail::to($users)->send(new Launch());
+        Mail::to($users)->send(new Launch());
+        return 0;
     }
 }
